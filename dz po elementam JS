@@ -1,0 +1,22 @@
+let firstName = "Denis"
+let lastName = "Olesiyuk"
+console.log(`Вас зовут :  ${firstName} ${lastName}`)
+
+
+let first_Name = "Denis"
+let last_Name = "Olesiyuk"
+console.log(`Рады вас видеть, ${firstName} ${lastName}`)
+
+let fullName = "Denis Olesiyuk";
+console.log(fullName.length)
+
+let NAME = prompt('Введите свое имя');
+console.log(`Привет, ${NAME}`)
+
+
+let num1 = prompt('Введи любое число')
+let num2 = prompt('Введи любое число')
+console.log(num1 * num2)
+console.log(num1 / num2)
+console.log(num1 ** num2)
+console.log(num1 - num2)
