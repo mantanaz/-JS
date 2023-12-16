@@ -1,1 +1,70 @@
+let name = prompt('Введите ваше имя')
 
+function logGreeting(name) {
+    console.log(`Ваше имя :${name} `)
+}
+
+logGreeting();
+
+                        N2
+let name1 = prompt('Введите ваше имя')
+let name2 = prompt('Введите ваше имя')
+let name3 = prompt('Введите ваше имя')
+
+function insertName (name1, name2, name3) {
+    console.log(`${name1} is active now`)
+console.log(`${name2} is active now`)
+    console.log(`${name3} is active now`)
+}
+
+insertName();
+
+                          N3
+let a = prompt('Введите любое число')
+let b = prompt('Введите любое число')
+let c = prompt('Введите любое число')
+
+function highestNum(a,b,c) {
+    if (a > b && a > c){
+        console.log(a)
+    }
+    if (b > c && b > a) {
+        console.log(b)
+    }
+    if (c > a && c > b) {
+        console.log(c)
+    }
+}
+
+highestNum();
+
+                      N4
+let one = prompt('Введите любое число')
+let two = prompt('Введите любое число')
+
+  function minNum(one,two) {
+  if (one < two){
+  console.log(one)
+}
+  if (two < one){
+  console.log(two)
+}
+}
+
+minNum();
+
+                      N5
+const rub = 1200;
+const usd = 50;
+
+function calculator(rub,usd){
+  console.log('Общая сумма всех счетов:',rub + usd*75)
+}
+
+calculator();
+
+                     N6
+const calc = (a,b,sign) => {
+console.log(a + b)
+};
+calc(7,9,'+');
