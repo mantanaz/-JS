@@ -1,0 +1,126 @@
+//                        N1
+// const names = ['Влад', 'Дима', 'Денис']
+// names[1] = 'Classified'
+// console.log(names)
+
+//                         N2
+// const odnogryp = ['Влад', 'Дима', 'Денис']
+// odnogryp.push('Женя')
+// odnogryp.shift()
+// console.log(odnogryp)
+
+//                         N4
+// const nums = [1, -5, 3, -120]
+// const getnegativenums = (data) => {
+//     data.forEach(item => item < 0? console.log(item): null)
+
+// }
+// console.log(getnegativenums)
+
+//                        N5
+// const listEl = document.querySelector('.list')
+// const films = ['Дедпул', '1+1', 'Волк с Уолл Стрит','Человек паук']
+// vf = prompt('Введите название фильма')
+// films.push(vf)
+// vf1 = prompt('Введите название фильма')
+// films.unshift(vf1)
+
+// const drfilms = (data) => {
+//     listEl.innerHTML = data.map((film) => '<li>$ {films} </li>').join('')
+// }
+
+// console.log(films[4])
+// console.log(films[5])
+
+//                         N6
+// const names = ['Michael', 'Trevor', 'Franklin', 'Lamar', 'Jimmy'];
+
+// function printWithDashes(name) {
+//     console.log('-' + name + '-');
+// }
+
+// function printWithHearts(name) {
+//     console.log('<3<3<3' + name + '<3<3<3');
+// }
+
+// function printWithIndex(name, index) {
+//     console.log(index + ' - ' + name);
+// }
+
+// names.forEach(printWithDashes);
+// names.forEach(printWithHearts);
+// names.forEach(printWithIndex);
+
+//                         N7
+// function convertKebabToUpperCase(kebabCaseString) {
+//     return kebabCaseString.split('-').map(word => word.toUpperCase()).join('_')
+// }
+
+// let kebabString = prompt('Введите слово')
+// const upperCaseString = convertKebabToUpperCase(kebabString)
+// console.log(upperCaseString)
+
+//                         N3
+// function numberToText() {
+//     // Запрашиваем у пользователя ввод числа от 1 до 99
+//     let userInput = prompt('Введите число от 1 до 99:');
+  
+//     // Проверяем, что введенное значение является числом
+//     let number = parseInt(userInput);
+  
+//     // Проверяем, что введенное число находится в диапазоне от 1 до 99
+//     if (!isNaN(number) && number >= 1 && number <= 99) {
+//       // Вызываем функцию, которая преобразует число в текст
+//       let result = convertNumberToText(number);
+  
+//       // Выводим результат в консоль
+//       console.log(result);
+//     } else {
+//       console.log('Некорректный ввод. Пожалуйста, введите число от 1 до 99.');
+//     }
+//   }
+  
+//   // Функция для преобразования числа от 1 до 99 в текстовое представление
+//   function convertNumberToText(number) {
+//     const units = ['', 'один', 'два', 'три', 'четыре', 'пять', 'шесть', 'семь', 'восемь', 'девять'];
+//     const teens = [
+//       'десять',
+//       'одиннадцать',
+//       'двенадцать',
+//       'тринадцать',
+//       'четырнадцать',
+//       'пятнадцать',
+//       'шестнадцать',
+//       'семнадцать',
+//       'восемнадцать',
+//       'девятнадцать',
+//     ];
+//     const tens = [
+//       '',
+//       '',
+//       'двадцать',
+//       'тридцать',
+//       'сорок',
+//       'пятьдесят',
+//       'шестьдесят',
+//       'семьдесят',
+//       'восемьдесят',
+//       'девяносто',
+//     ];
+  
+//     let result = '';
+  
+//     if (number >= 10 && number <= 19) {
+//       result = teens[number - 10];
+//     } else {
+//       const digit = number % 10;
+//       const ten = Math.floor(number / 10);
+  
+//       result = tens[ten] + ' ' + units[digit];
+//     }
+  
+//     return result.trim();
+//   }
+  
+//   // Вызываем функцию для преобразования числа, введенного пользователем
+//   numberToText();
