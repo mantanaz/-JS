@@ -1,0 +1,7 @@
+//                   n1
+const buttonEls = document.querySelectorAll('button')
+buttonEls.forEach (e => {
+    element.addEventListener('click', (e) => {
+        e.target.style.color = 'green';
+    })
+})
