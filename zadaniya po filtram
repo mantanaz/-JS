@@ -1,0 +1,19 @@
+const nums = [1, -5, 10, 3056, -278, 10.3, -10];
+const positiveNums = nums.filter((nums) => nums > 0);
+console.log('positiveNums:', positiveNums)
+
+const nums1 = [1, -5, 10, 3056, -278, 10.3, -10];
+const negativeNums = nums1.filter((nums1) => nums1 < 0);
+console.log('negativeNums:', negativeNums)
+
+const nums3 = [1, -5, 10, 3056, -278, 10.3, -10, 8, 6, 4];
+const midNums = nums3.filter((nums3) => nums3 > 0);
+console.log('midNums:', midNums)
+
+const num = [1, 25, 125, 626, 144, 225, 840]
+const korenMap = num.map((num) => sqrt(num))
+console.log('korenMap:', korenMap)
+
+const num = [1, 25, 125, 626, 144, 225, 840]
+const vosklZnak = num.map((num) => num + '!')
+console.log('vosklZnak:', vosklZnak)
